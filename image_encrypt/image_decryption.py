@@ -36,8 +36,8 @@ def main():
     encrypted_data, image_size = load_encrypted_image(image_path)
 
     # The key and IV used for encryption (must be securely retrieved)
-    key = bytes.fromhex('fcc76948ea6f0497c1928908857db707717ca5ed18ccb7b7fe8de40fe3af7a1d')
-    iv = bytes.fromhex('2a6df5373f88c7e740bea07c99defd47')
+    key = bytes.fromhex('key')
+    iv = bytes.fromhex('IV')
 
     # Decrypt image data
     decrypted_data = decrypt_image(encrypted_data, key, iv)
